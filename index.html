@@ -67,12 +67,13 @@
 					}),
 					Bindery.RunningHeader({
 						render: (page) => {
-							if (page.number = 1) return ``; else if (page.isLeft) return `${page.number} · ${page.heading.h1} `;
-							else if (page.isRight) {
+							if (page.isLeft) return `${page.number} · ${page.heading.h1} `;
+							else if (page.isRight && page.number > 1) {
 								let section = Object.values(page.heading).slice(1).join(' ‣ ');
 								if (section !== '') return `${section} · ${page.number}`;
 								else return `${page.number}`;
-							}
+							} 
+							else if (page.numer = 1)return ``;,
 						},
 					}),
 					Bindery.PageReference({
