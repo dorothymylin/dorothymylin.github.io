@@ -71,7 +71,7 @@
 								let section = Object.values(page.heading).slice(1).join(' ‣ ');
 								if (section !== '') return `${section} · ${page.number}`;
 								else return `${page.number}`;
-							} 
+							} else if (page.number = 1) return ``;
 						},
 					}),
 					Bindery.PageReference({
