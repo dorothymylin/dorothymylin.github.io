@@ -18,7 +18,6 @@
 				content: originalArticle,
 				rules: [
 					Bindery.PageBreak({ selector: '.vertical-navbox', position: 'before', continue: 'right' }),
-					Bindery.PageBreak({ selector: 'h1', position: 'after'}),
 					Bindery.PageBreak({ selector: 'h2', position: 'before', continue: 'right' }),
 					Bindery.PageBreak({ selector: 'tr', position: 'avoid' }),
 					// Bindery.FullBleedSpread({ selector: '.thumb', continue: 'same' }),
@@ -73,7 +72,6 @@
 								if (section !== '') return `${section} · ${page.number}`;
 								else return `${page.number}`;
 							} 
-							else if (page.numer = 1)return ``;,
 						},
 					}),
 					Bindery.PageReference({
