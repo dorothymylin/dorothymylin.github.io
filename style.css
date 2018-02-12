@@ -8,7 +8,6 @@ html {
 }*/
 
 .footnote {
-  font-family: Arial;
   font-size: 6pt;
 }
 
@@ -134,5 +133,4 @@ table, th, td {
 
 .📖-running-header{
   font-size: 9pt !important;
-  font-family: Arial;
 }
