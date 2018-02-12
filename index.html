@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dorothy Codes A Book</title>
+
+	<style>
+	@font-face {
+    font-family: Plain;
+    src: url(Plain-Bold.otf);}
+
+	h1 {font-family:Plain;
+		font-size:60pt;
+		line-height:60pt;
+		margin-top:0;}
+
+	h2 {font-family:Plain;
+		font-size: 15pt;
+		line-height: 16pt;
+		margin: 0;}
+
+	p {font-family:Plain;
+		font-size: 15pt;
+		line-height: 16pt;
+		margin-top: 0;}
+
+	a {color:black;}
+	a:hover{color:blue;}
+
+	.📖-running-header {font-family:Plain;
+		font-size: 15pt !important;
+		top: 473pt !important;
+	}
+
+	img {width: 328.5pt;
+		filter:grayscale(100%);}
+	</style>
+</head>
+
+<body>
+	<div id="content">
+
+		<h1 >Dorothy Codes a Book About Snow Days</h1>
+		<br><br><br><br><br><br><h2>5 Frosty Haikus</h2>
+		<p></p><p>Thursday, February 08, 2018 11:58 AM<br><br>From: Fracareta, Dylan
+<br>To:Chun, Susan
+<br>Cc:Melcher, Gabriel‎; Lin, Dorothy‎; Iverson, Joe 
+<br><br><br>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br><br>For tomorrow Dorothy is going to research thoroughly and putting together a presentation of the bindery site I sent you last week for next weeks HTMAB. She’s psyched and I’m excited to see what possible application it could have, for Internet and beyond.
+<br><br>...<br><br>Alternatively, and if you prefer:
+
+<br>-  <a href="#section1">Dorothy will be: Mushing</a>
+
+<br>-  <a href="#section2">Gabe will be: Cross-country sledding</a>
+
+<br>-  <a href="#section3">Dylan will be: Making Snow Angles</a>
+
+<br>-  <a href="#section4">Joe will be: Ice Fishing</a>
+
+<br>-  <a href="#section5">Bridget will be: Tubing</a></p>
+
+<p><img src="images/mushing.jpg"></p><p id="section1">Dorothy will be: Mushing<br><br>Mushing with huskies<br>Is not nearly as dope as<br>This book of haikus</p>
+
+<p><img src="images/sledding.jpg"></p><p id="section2">Gabe will be: Cross-country sledding<br><br>Gabriel flies by<br>From his sled he gives a shout<br>With gusto, "chingon!"</p>
+
+<p><img src="images/angles.jpg"></p><p id="section3">Dylan will be: Making Snow Angles<br><br>Promised snow angels<br>Typographical error<br>Again, measuring</p>
+
+<p><img src="images/fishing.jpg"></p><p id="section4">Joe will be: Ice Fishing<br><br>I respect the vibe<br>Of a man who sits on ice<br>Instead of his couch</p>
+
+<p><img src="images/tubing.jpg"></p><p id="section5">Bridget will be: Tubing<br><br>Fast and furious<br>Bridget tubes not for the gold<br>Only for glory</p>
+
+<p></p><p></p><h1>What did you do on your snow day?</h1><br><br><br><br><br><br><h2>This book was made with <a href="https://evanbrooks.info/bindery/">bindery.js</a>.
+
+<p>Thank you for reading<br>This book I made in lieu of<br>Learning how to code
+
+	</div>
+
+<script src="js/bindery.min.js"></script>
+<script>
+  Bindery.makeBook({ 
+  content: '#content',
+  rules: [
+      Bindery.PageBreak({ selector: 'p', position: 'before' }),
+      Bindery.RunningHeader({render: (page) => {
+						 if (page.isRight && page.number > 1) return `${page.number}`; else if (page.isLeft) return ``; else if (page.numer = 1)return ``;},}),
+    ],
+
+  pageSetup: {
+  	size: { width: '360pt', height: '504pt' },
+ 	margin: { top: '13.5pt', inner: '18pt', outer: '13.5pt', bottom: '13.5pt' },
+ 	bleed: '9pt',
+  },  
+});
+
+
+</script>
+
+</body>
+</html>
