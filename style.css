@@ -130,3 +130,8 @@ table, th, td {
 .index-content h4 {
   break-after: avoid;
 }
+
+.📖-running-header{
+  font-size: 9pt;
+  font-family: Arial;
+}
