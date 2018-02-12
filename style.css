@@ -8,7 +8,8 @@ html {
 }*/
 
 .footnote {
-  font-size: 8pt;
+  font-family: Arial;
+  font-size: 6pt;
 }
 
 h1 {
@@ -67,7 +68,7 @@ h4 {
 }
 
 .thumbcaption {
-  font-size: 8pt;
+  font-size: 6pt;
   margin-bottom: 12pt;
 }
 
@@ -132,6 +133,6 @@ table, th, td {
 }
 
 .📖-running-header{
-  font-size: 9pt;
+  font-size: 9pt !important;
   font-family: Arial;
 }
